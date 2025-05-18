@@ -8,9 +8,10 @@
       "url": "https://github.com/kethinov/spc-tag/graphs/contributors"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
-    "spc-tag.js"
+    "spc-tag.js",
+    "spc-id666-tag-editor.js"
   ],
   "homepage": "https://github.com/kethinov/spc-tag.git",
   "license": "CC-BY-4.0",
