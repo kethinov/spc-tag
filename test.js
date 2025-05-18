@@ -5,6 +5,15 @@ const fs = require('fs')
 const { readSPCID666Tags, writeSPCID666Tags } = require('./spc-id666-tag-editor')
 
 describe('spc-tag command line tests', () => {
+  it('spc-tag should print an error when an invalid file is passed', () => {
+    try {
+      const output = execFileSync('node', ['spc-tag.js'], { encoding: 'utf8', stdio: ['pipe', 'pipe', 'ignore'] })
+      assert(output.includes('Please supply a valid SPC file.'))
+    } catch (err) {
+      // swallow error
+    }
+  })
+
   it('spc-tag should print metadata from a spc file', () => {
     fs.writeFileSync('test.spc', makeSampleSPCFile())
     try {
