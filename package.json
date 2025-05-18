@@ -1,0 +1,52 @@
+{
+  "name": "spc-tag",
+  "description": "🎮🎶 Node.js library and command line program to read or write Super Nintendo SPC ID666 tags.",
+  "author": "Eric Newport <kethinov@gmail.com>",
+  "contributors": [
+    {
+      "name": "Contributors",
+      "url": "https://github.com/kethinov/spc-tag/graphs/contributors"
+    }
+  ],
+  "version": "1.0.0",
+  "files": [
+    "spc-tag.js"
+  ],
+  "homepage": "https://github.com/kethinov/spc-tag.git",
+  "license": "CC-BY-4.0",
+  "main": "spc-tag.js",
+  "bin": {
+    "spc-tag": "spc-tag.js"
+  },
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "c8": "10.1.3",
+    "mocha": "11.3.0",
+    "standard": "17.1.2"
+  },
+  "scripts": {
+    "coverage": "c8 --reporter=text --reporter=lcov mocha test.js --test",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kethinov/spc-tag.git"
+  },
+  "keywords": [
+    "snes",
+    "SNES",
+    "super nintendo",
+    "Super Nintendo",
+    "spc",
+    "SPC",
+    "tag",
+    "SPC700",
+    "SNES-SPC700"
+  ],
+  "funding": "https://www.paypal.com/paypalme/newport"
+}
