@@ -1,3 +1,8 @@
+## 1.0.3
+
+- Fixed packaging issues on npm.
+- Updated dependencies.
+
 ## 1.0.2
 
 - Added version number to CLI program output.
