@@ -18,11 +18,19 @@ npm i -g spc-tag
 spc-tag file.spc
 ```
 
-#### Write a tag
+#### Write tags
 
 ```
 spc-tag write songTitle="new title" file.spc
 ```
+
+To write more than one tag at once, list them all before the file:
+
+```
+spc-tag write songTitle="new title" artist="new artist" file.spc
+```
+
+A tag name that isn't one of the tags (like `songTitel`) is an error, which suggests the tag you may have meant, and nothing is written.
 
 ## Use in Node.js
 
