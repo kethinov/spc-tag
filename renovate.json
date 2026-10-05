@@ -5,5 +5,6 @@
     ":ignoreUnstable",
     ":respectLatest",
     ":disableDependencyDashboard"
-  ]
+  ],
+  "minimumReleaseAge": "5 days"
 }
